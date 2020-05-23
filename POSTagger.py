@@ -23,7 +23,8 @@ def hindi_model():
 def postag_code(string):
     model = hindi_model()
     new_tagged = (model.tag(nltk.word_tokenize(string)))
-    print(new_tagged)
+    # print(new_tagged)
+    return new_tagged
 
 # with open("result/output.txt","a") as output_file:
 #     output_file.write("\n[INPUT]\n")

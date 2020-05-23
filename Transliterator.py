@@ -5,8 +5,8 @@ class Transliterate:
     def code_transliterate(self):
         trn = Transliterator(source='hin', target='eng', build_lookup=True)
         eng = trn.transform(self)
-        print("\nTransliteration:")
-        print(eng)
+        # print("\nTransliteration:")
+        # print(eng)
 
 
 
