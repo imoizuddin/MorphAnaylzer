@@ -10,7 +10,7 @@ def hindi_model():
     return tnt_pos_tagger
 
 
-def postag_code(string):
+def postag_code(string: object) -> object:
     model = hindi_model()
     new_tagged = (model.tag(nltk.word_tokenize(string)))
     # print(new_tagged)
